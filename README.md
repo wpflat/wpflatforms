@@ -1,6 +1,6 @@
 # WPFlat Forms
 
-Online forms your clients fill in, for WordPress. Needs [WPFlat Core](https://github.com/ulrea-dev/wpflatcore).
+Online forms your clients fill in, for WordPress. Needs [WPFlat Core](https://github.com/wpflat/wpflatcore).
 
 - A public page per form: `yoursite.com/form/<address>/`, no login needed.
 - Sections that repeat per company: choose "number of subsidiaries" and the company questions are asked once for the parent and once for each subsidiary.
