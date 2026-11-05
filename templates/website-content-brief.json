@@ -1,0 +1,395 @@
+{
+	"title": "Website content brief",
+	"description": "The details we need to plan and write your website: your business, and, if you have them, each of your other companies or branches.",
+	"cover": {
+		"eyebrow": "Information and consent",
+		"for": "",
+		"lead": [
+			"{site} is building your website. To do this properly we need accurate details about your business. This page explains what we will ask for and how we will use it. Please read it, then tick the box to agree before you begin."
+		],
+		"sections": [
+			{
+				"title": "What we will ask for",
+				"text": "Details about your business and, if you have them, each of your other companies or branches: company information, services and projects, the people on the management team, licences and certificates, and contact details. You can also upload files such as logos, photos and documents. We keep your name, email and phone number so we can reach you about your answers."
+			},
+			{
+				"title": "How we will use it",
+				"text": "Only to plan, write, design, build and maintain your website, and to contact you about it. We will not publish anything until you have approved it. We will not sell your details or use them for anything else."
+			},
+			{
+				"title": "Who can see it",
+				"text": "Staff and contractors at {site} who work on this project. Your answers are stored on {site} systems."
+			},
+			{
+				"title": "Details about other people",
+				"text": "If you give us details about other people, such as directors and managers with their names, biographies and photos, please make sure they are happy for you to share them."
+			},
+			{
+				"title": "Your choices",
+				"text": "Answer only what you can, and tell us about anything that must not be published. You can change your answers at any time with your private link. You can ask us to correct or delete what you sent by contacting the person at {site} who sent you this form."
+			}
+		],
+		"consent": "I have read the information above. I agree to share the details I enter in this form, and the files I upload, with {site} for my website project, and I am authorised to share them on behalf of my business.",
+		"cta": "I agree and continue",
+		"resume": "Continue where I stopped"
+	},
+	"group": {
+		"field": "subs",
+		"table": "companies",
+		"parent": "Your company",
+		"sub": "Branch or company",
+		"max": 12
+	},
+	"thanks": "Thank you. We have your answers and will be in touch to confirm anything we need. You can still open your link and change your answers until we start writing.",
+	"sections": [
+		{
+			"id": "you",
+			"title": "About you",
+			"intro": "So we know who is answering and where to send your link.",
+			"fields": [
+				{
+					"id": "name",
+					"type": "text",
+					"label": "Your name",
+					"required": true
+				},
+				{
+					"id": "email",
+					"type": "email",
+					"label": "Your email",
+					"required": true,
+					"help": "We email you a link so you can come back and finish."
+				},
+				{
+					"id": "phone",
+					"type": "tel",
+					"label": "Phone or WhatsApp"
+				},
+				{
+					"id": "role",
+					"type": "text",
+					"label": "Your role in the business"
+				}
+			]
+		},
+		{
+			"id": "p1",
+			"title": "Part 1: Your business overall (answer once)",
+			"intro": "These answers tell us how your business and any other companies or branches fit together, so every website tells the same story.",
+			"fields": [
+				{
+					"id": "subs",
+					"type": "count",
+					"label": "How many other companies or branches do you have? Enter 0 if none.",
+					"required": true,
+					"help": "Part 2 below is repeated for your company and for each other company or branch."
+				},
+				{
+					"id": "companies",
+					"type": "companies",
+					"label": "Please list each company or branch",
+					"columns": [
+						{
+							"id": "name",
+							"label": "Company name (as it should appear)",
+							"required": true
+						},
+						{
+							"id": "does",
+							"label": "What it does, in one line"
+						},
+						{
+							"id": "website",
+							"label": "Current website"
+						},
+						{
+							"id": "contact",
+							"label": "Contact person for content"
+						}
+					]
+				},
+				{
+					"id": "g1",
+					"n": "1",
+					"type": "text",
+					"label": "What does the business name stand for in full?"
+				},
+				{
+					"id": "g2",
+					"n": "2",
+					"type": "textarea",
+					"label": "How would you describe the business to someone new, in one or two sentences?"
+				},
+				{
+					"id": "g3",
+					"n": "3",
+					"type": "textarea",
+					"label": "When did the business start, and what are its biggest milestones?"
+				},
+				{
+					"id": "g4",
+					"n": "4",
+					"type": "textarea",
+					"label": "What are the business's vision, mission, and core values?"
+				},
+				{
+					"id": "g5",
+					"n": "5",
+					"type": "textarea",
+					"label": "Which directors and senior leaders should we show on the website?"
+				},
+				{
+					"id": "g6",
+					"n": "6",
+					"type": "textarea",
+					"label": "Should the websites look alike and link to each other?"
+				},
+				{
+					"id": "g7",
+					"n": "7",
+					"type": "textarea",
+					"label": "What do you most want the website to do for the business (for example: attract partners, win contracts, build trust, recruit staff)?"
+				}
+			]
+		},
+		{
+			"id": "p2",
+			"title": "Part 2: Each company",
+			"intro": "Answer this set once for your company and once for each other company or branch: pick the company in the tabs.",
+			"repeat": true,
+			"fields": [
+				{
+					"type": "heading",
+					"label": "About the company"
+				},
+				{
+					"id": "c1",
+					"n": "1",
+					"type": "textarea",
+					"label": "What is the company's full name, and what year did it start?"
+				},
+				{
+					"id": "c2",
+					"n": "2",
+					"type": "textarea",
+					"label": "What does the company do, in two or three sentences?"
+				},
+				{
+					"id": "c3",
+					"n": "3",
+					"type": "textarea",
+					"label": "Who are its customers?"
+				},
+				{
+					"id": "c4",
+					"n": "4",
+					"type": "textarea",
+					"label": "Where are its offices, and where does it work?"
+				},
+				{
+					"id": "c5",
+					"n": "5",
+					"type": "textarea",
+					"label": "How did the company start, and what are its key milestones?"
+				},
+				{
+					"id": "c6",
+					"n": "6",
+					"type": "textarea",
+					"label": "Does it have its own vision, mission, or values? If yes, what are they?"
+				},
+				{
+					"type": "heading",
+					"label": "What the company does"
+				},
+				{
+					"id": "c7",
+					"n": "7",
+					"type": "textarea",
+					"label": "What services or products does the company offer? Please list each one with a line on what it covers."
+				},
+				{
+					"id": "c8",
+					"n": "8",
+					"type": "textarea",
+					"label": "What facilities, equipment, or assets does it run that we can mention?"
+				},
+				{
+					"id": "c9",
+					"n": "9",
+					"type": "textarea",
+					"label": "Why do customers choose this company over others?"
+				},
+				{
+					"id": "c10",
+					"n": "10",
+					"type": "textarea",
+					"label": "Which two or three projects are you most proud of? For each, tell us what was done, for whom, when, and the result."
+				},
+				{
+					"id": "c11",
+					"n": "11",
+					"type": "textarea",
+					"label": "What is the company working on now, and what is planned for the next few years?"
+				},
+				{
+					"type": "heading",
+					"label": "Proof and standards"
+				},
+				{
+					"id": "c12",
+					"n": "12",
+					"type": "textarea",
+					"label": "Which numbers can we publish (for example: years in operation, projects completed, number of staff, capacity)?"
+				},
+				{
+					"id": "c13",
+					"n": "13",
+					"type": "textarea",
+					"label": "What licences and certifications does the company hold?"
+				},
+				{
+					"id": "c14",
+					"n": "14",
+					"type": "textarea",
+					"label": "How does the company keep people and the environment safe? Please share your safety record if you have one."
+				},
+				{
+					"id": "c15",
+					"n": "15",
+					"type": "textarea",
+					"label": "What does the company do for local communities?"
+				},
+				{
+					"id": "c16",
+					"n": "16",
+					"type": "textarea",
+					"label": "Which clients and partners can we name, and can we show their logos?"
+				},
+				{
+					"id": "c17",
+					"n": "17",
+					"type": "textarea",
+					"label": "Has the company won any awards or received testimonials?"
+				},
+				{
+					"type": "heading",
+					"label": "People"
+				},
+				{
+					"id": "c18",
+					"n": "18",
+					"type": "textarea",
+					"label": "Who is on the management team? Please give each person's name, title, short bio, and photo."
+				},
+				{
+					"id": "c19",
+					"n": "19",
+					"type": "radio",
+					"options": [
+						"Yes",
+						"No",
+						"Not sure yet"
+					],
+					"label": "Should the website have a careers page?"
+				},
+				{
+					"type": "heading",
+					"label": "Audience and goals"
+				},
+				{
+					"id": "c20",
+					"n": "20",
+					"type": "textarea",
+					"label": "Who must the website speak to (for example: customers, partners, regulators, local communities, job seekers)?"
+				},
+				{
+					"id": "c21",
+					"n": "21",
+					"type": "textarea",
+					"label": "What should a visitor do after reading (call, send an enquiry, request a proposal, register as a vendor)?"
+				},
+				{
+					"id": "c22",
+					"n": "22",
+					"type": "textarea",
+					"label": "Which pages do you want on the website?"
+				},
+				{
+					"id": "c23",
+					"n": "23",
+					"type": "textarea",
+					"label": "What do you dislike about the current website, and which websites do you like?"
+				},
+				{
+					"type": "heading",
+					"label": "Contact details"
+				},
+				{
+					"id": "c24",
+					"n": "24",
+					"type": "textarea",
+					"label": "Which phone numbers, email addresses, office hours, and social media links should appear on the website?"
+				},
+				{
+					"id": "c25",
+					"n": "25",
+					"type": "email",
+					"label": "Which email address should receive enquiries from the website?"
+				}
+			]
+		},
+		{
+			"id": "p3",
+			"title": "Part 3: Files to send",
+			"intro": "Add the files you have for this company, where they exist.",
+			"repeat": true,
+			"fields": [
+				{
+					"id": "f_files",
+					"type": "files",
+					"label": "Drop your files here",
+					"help": "Logos, company profile, photos, certificates, brochures and so on. You can add more later with your private link."
+				},
+				{
+					"id": "f_send",
+					"type": "checkboxes",
+					"label": "Anything you will send us another way, or still need to find",
+					"options": [
+						"Company profile (PDF or Word)",
+						"Logo files in original format (AI, EPS, SVG, or high quality PNG)",
+						"Brand guide: colours, fonts, and logo rules",
+						"Photos of operations, facilities, projects, and staff at work",
+						"Headshots of board and management",
+						"Copies of licences and certificates",
+						"Client and partner logos, with permission to use them",
+						"Brochures, presentations, tender documents, or annual reports",
+						"Organisation chart"
+					]
+				}
+			]
+		},
+		{
+			"id": "p4",
+			"title": "Approval",
+			"intro": "Every statement on the new website must be true, current, and approved by you.",
+			"fields": [
+				{
+					"id": "approver",
+					"type": "text",
+					"label": "Who at the business gives final approval on all copy?"
+				},
+				{
+					"id": "deadline",
+					"type": "text",
+					"label": "By what date can all answers and files reach us?"
+				},
+				{
+					"id": "notes",
+					"type": "textarea",
+					"label": "Anything else we should know?"
+				}
+			]
+		}
+	]
+}

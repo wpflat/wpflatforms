@@ -1,0 +1,19 @@
+{
+  "name": "wpflatforms",
+  "version": "0.4.3",
+  "private": true,
+  "type": "module",
+  "description": "Online forms with repeating sections, saved drafts and a submissions inbox, for the WPFlat suite.",
+  "scripts": {
+    "build": "vite build"
+  },
+  "dependencies": {
+    "vue": "^3.5.43",
+    "@element-plus/icons-vue": "^2.3.2",
+    "lucide-vue-next": "^1.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.9",
+    "vite": "^8.3.2"
+  }
+}
